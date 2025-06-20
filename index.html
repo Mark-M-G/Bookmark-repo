@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark Ass</title>
+    <!-- Icons -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- style sheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="pt-2">
+    <header class="m-5">
+      <h1 class="text-center pb-3 bt-5">Bookmarker</h1>
+    </header>
+    <div class="container my-border pt-4 pb-4">
+      <section class="subtitle mb-4">
+        <h2 class="text-center">
+          <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites
+          <i class="fa-solid fa-bookmark"></i>
+        </h2>
+      </section>
+      <section>
+        <div class="container">
+          <div class="mb-3 mt-2">
+            <label for="siteNameId" class="form-label text-start"
+              ><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label
+            >
+            <input 
+              id="siteNameId"
+              type="text"
+              class="form-control"
+              placeholder="Bookmark Name"
+            />
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="siteLinkId" class="form-label text-start"
+              ><i class="fa-solid fa-link pe-2"></i>Site URL</label
+            >
+            <input
+              id="siteLinkId"
+              class="form-control"
+              placeholder="Website Name"
+            />
+          </div>
+          <div class="btn-sec d-flex justify-content-center mt-4">
+            <button onclick="addSite()" class="btn btn-color px-5">
+              Submit
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section>
+      <table class="container text-center mt-4">
+        <thead>
+          <tr class="bg-white border-bottom">
+            <th class="text-capitalize col-md-3 pt-2 pb-2">index</th>
+            <th class="text-capitalize col-md-3 pt-2 pb-2">Website Name</th>
+            <th class="text-capitalize col-md-3 pt-2 pb-2">visit</th>
+            <th class="text-capitalize col-md-3 pt-2 pb-2">delete</th>
+          </tr>
+        </thead>
+
+        <tbody id="tableBodyId">
+          <!-- Dynamic content will be inserted here -->
+        
+        </tbody>
+      </table>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
